@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class>
+    <meta charset="UTF-8 ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+
+    <link rel="icon " type="image/png " sizes="32x32 " href="./images/favicon-32x32.png ">
+    <link rel="stylesheet " href="./dist/output.css ">
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+
+</head>
+
+<body class="bg-brand-red bg-mobile desktop:bg-desktop bg-repeat min-h-screen font-poppins flex flex-col items-center justify-center p-6 desktop:p-0">
+
+    <main class="w-full max-w-93.75 desktop:max-w-277.5 desktop:grid desktop:grid-cols-2 desktop:items-center desktop:gap-12">
+
+        <div class="text-center desktop:text-left text-white mb-16 desktop:mb-0">
+            <h1 class="text-3xl desktop:text-5xl font-bold leading-tight mb-6">
+                Learn to code by watching others
+            </h1>
+            <p class="text-base font-medium opacity-90">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-6">
+
+            <div class="bg-brand-purple text-white text-center py-4 px-8 rounded-xl shadow-[0px_8px_0px_rgba(0,0,0,0.15)]">
+                <p class="text-sm tracking-wide">
+                    <span class="font-bold">Try it free 7 days</span> then $20/mo. thereafter
+                </p>
+            </div>
+
+            <form id="signup-form" novalidate class="bg-white p-6 desktop:p-10 rounded-xl shadow-[0px_8px_0px_rgba(0,0,0,0.15)] flex flex-col gap-4">
+
+                <div class="input-group relative flex flex-col gap-1">
+                    <div class="relative">
+                        <input type="text" name="firstName" placeholder="First Name" class="w-full border border-muted-purple/50 p-4 rounded-lg focus:border-brand-purple outline-none font-semibold text-dark-gray transition-all placeholder:text-dark-gray/50">
+                        <img src="./images/icon-error.svg" alt="Error" class="error-icon hidden absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6">
+                    </div>
+                    <p class="error-msg hidden text-brand-red text-[11px] font-medium italic text-right">First Name cannot be empty</p>
+                </div>
+
+                <div class="input-group relative flex flex-col gap-1">
+                    <div class="relative">
+                        <input type="text" name="lastName" placeholder="Last Name" class="w-full border border-muted-purple/50 p-4 rounded-lg focus:border-brand-purple outline-none font-semibold text-dark-gray transition-all placeholder:text-dark-gray/50">
+                        <img src="./images/icon-error.svg" alt="Error" class="error-icon hidden absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6">
+                    </div>
+                    <p class="error-msg hidden text-brand-red text-[11px] font-medium italic text-right">Last Name cannot be empty</p>
+                </div>
+
+                <div class="input-group relative flex flex-col gap-1">
+                    <div class="relative">
+                        <input type="email" name="email" placeholder="Email Address" class="w-full border border-muted-purple/50 p-4 rounded-lg focus:border-brand-purple outline-none font-semibold text-dark-gray transition-all placeholder:text-dark-gray/50">
+                        <img src="./images/icon-error.svg" alt="Error" class="error-icon hidden absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6">
+                    </div>
+                    <p class="error-msg hidden text-brand-red text-[11px] font-medium italic text-right">Looks like this is not an email</p>
+                </div>
+
+                <div class="input-group relative flex flex-col gap-1">
+                    <div class="relative">
+                        <input type="password" name="password" placeholder="Password" class="w-full border border-muted-purple/50 p-4 rounded-lg focus:border-brand-purple outline-none font-semibold text-dark-gray transition-all placeholder:text-dark-gray/50">
+                        <img src="./images/icon-error.svg" alt="Error" class="error-icon hidden absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6">
+                    </div>
+                    <p class="error-msg hidden text-brand-red text-[11px] font-medium italic text-right">Password cannot be empty</p>
+                </div>
+
+                <button type="submit" class="bg-brand-green text-white font-bold py-4 rounded-lg shadow-[inset_0_-4px_0_rgba(0,0,0,0.2)] hover:opacity-70 transition-all uppercase tracking-widest text-sm mt-2">
+                    Claim your free trial
+                </button>
+
+                <p class="text-[11px] text-muted-purple font-medium text-center px-6 leading-relaxed">
+                    By clicking the button, you are agreeing to our
+                    <a href="#" class="text-brand-red font-bold hover:underline">Terms and Services</a>
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+
+<script src="./src/main.js"></script>
+
+</html>

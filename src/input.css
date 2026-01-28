@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@theme {
+    /* Primary Colors */
+    --color-brand-red: hsl(0, 100%, 74%);
+    --color-brand-green: hsl(154, 59%, 51%);
+    /* Accent */
+    --color-brand-purple: hsl(248, 32%, 49%);
+    /* Neutral */
+    --color-dark-gray: hsl(249, 10%, 26%);
+    --color-muted-purple: hsl(246, 25%, 77%);
+    /* Typography */
+    --font-poppins: "Poppins", sans-serif;
+    /* Screen Sizes */
+    --breakpoint-desktop: 1440px;
+    --background-image-mobile: url('/images/bg-intro-mobile.png');
+    --background-image-desktop: url('/images/bg-intro-desktop.png');
+}
+
+
+/* Import Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@layer base {
+    body {
+        @apply font-poppins text-[16px] text-dark-gray antialiased;
+    }
+}
